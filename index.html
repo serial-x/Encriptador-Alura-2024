@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Challenger one</title>
+</head>
+
+<body>
+    <header>
+        <img src="assets/Logo.png" alt="imagen logo">
+    </header>
+    <main class="presentacion">
+        <section class="section__1">
+            <!-- <input type="text" class="contenedor__texto" placeholder="Ingrese el texto aqui" id="textarea__1"> -->
+            <textarea class="contenedor__texto" placeholder="Ingrese el texto aqui" id="textarea__1"></textarea>
+            <div class="comentario">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="contenedor__botones">
+                <button type="button" class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                <button type="button" class="btn-desencriptar" onclick="desencriptar()">Desencriptar</input>
+            </div>
+        </section>
+        <section class="section__2">
+            <div class="contenedor__muñeco" id="idmuñeco">
+                <img src="assets/Muñeco.png" id="muñeco" alt="imagen muñeco">
+            </div>
+            <div class="contenedor__1">
+                <div class="contenedor__status">
+                    <p id="titulo-mensaje">Ningún mensaje fue encontrado</p>
+                </div>
+                <div class="contenedor__mensaje">
+                    <p id="parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+            <div id="cont-mensaje" class="contenedor__resultado ocultar">
+                <p id="mensaje-encriptado">Mensaje encriptado</p>
+            </div>
+            <div id="botonCopiar" class="contenedor-boton-copiar ocultar">
+                <button type="button" class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">Desarrollado por ADN Trelew</footer>
+</body>
+    <script src="script.js"></script>
+</html>
